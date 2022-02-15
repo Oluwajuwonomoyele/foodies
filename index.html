@@ -4,19 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Foodies</title>
     <!-- npm bootstrap -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/9a050271ac.js" crossorigin="anonymous"></script>
 
     <!-- MY CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive-style.css">
 </head>
 <body>
+    <!-- header start -->
     <header>
-
+        <nav class="navbar navbar-expand-lg navigation-wrap bg-white">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="foodies logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-stream navbar-toggler-icon"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Explore Foods</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                  </li>
+                  <li><button class="main-btn">1200 345 123</button></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
     </header>
     <main>
+        <!-- home section start -->
+        <section id="home">
+            <div class="container-fluid px-0 top-banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6">
+                            <h1>Good food choices are good investments.</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo obcaecati dolorem saepe! Dolore, obcaecati soluta?</p>
+                            <div class="mt-4">
+                                <button class="main-btn"> Order Now <i class="fas fa-shopping-basket ps-3"></i></button>
+                                <button class="white-btn ms-lg-4 mt-lg-0 mt-4"> Order Now <i class="fas fa-angle-right ps-3"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- counter section start -->
+        <section id="counter">
+            <div class="counter-section">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                            <h2>
+                                <span id="count1"></span>+
+                            </h2>
+                            <p>SAVINGS</p>
+                        </div>
+                        <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                            <h2>
+                                <span id="count2"></span>+
+                            </h2>
+                            <p>PHOTOS</p>
+                        </div>
+                        <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                            <h2>
+                                <span id="count3"></span>+
+                            </h2>
+                            <p>ROCKETS</p>
+                        </div>
+                        <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                            <h2>
+                                <span id="count4"></span>+
+                            </h2>
+                            <p>GLOBES</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
     </main>
     <footer>
@@ -25,5 +108,6 @@
     
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
