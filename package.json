@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "bootstrap": "^5.1.3"
-  }
+  },
+  "name": "foodies",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oluwajuwonomoyele/foodies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oluwajuwonomoyele/foodies/issues"
+  },
+  "homepage": "https://github.com/Oluwajuwonomoyele/foodies#readme",
+  "description": ""
 }
