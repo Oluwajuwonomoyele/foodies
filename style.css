@@ -185,6 +185,10 @@ p {
     margin-right: 7px;
     margin-left: 0;
 }
+.navigation-wrap .navbar-brand:hover {
+    transform: none;
+}
+
 
 /* home section styling */
 .top-banner {
@@ -273,3 +277,98 @@ p {
 }
 
 /* testimonial section styling */
+.testimonial-section {
+    background: var(--primary-color);
+}
+.testimonial-section .carousel-item {
+    margin-top: 3rem;
+    padding: 10rem 3.1rem;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    text-align: center;
+}
+.testimonial-section .carousel-caption img {
+    max-width: 5rem;
+    border-radius: 50%;
+    padding: 0.3rem;
+}
+.testimonial-section .carousel-caption p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding: 0.6rem;
+}
+.testimonial-section .carousel-indicators {
+    bottom: -2.8rem;
+}
+.testimonial-section .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1rem;
+    opacity: 0.2;
+}
+.testimonial-section .carousel-indicators button.active {
+    opacity: 1;
+}
+
+/* faq section styling */
+.faq-section h4 span {
+    color: var(--primary-color);
+    font-size: 1.9rem;
+    margin-right: 0.3rem;
+}
+
+/* book food section styling */
+.book-food-section {
+    width: 100%;
+    background: url('./images/bg/bg-3.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 71.9px;
+    padding: 4.4rem 0;
+}
+
+/* newsletter section styling */
+.newsletter-section {
+    width: 55%;
+    margin: 0 auto;
+}
+.newsletter-section .form-control{
+    height: 3.2rem;
+    padding: 0 1.3rem;
+    font-size: 0.9rem;
+    width: 100%;
+    border: 0.2rem solid var(--text-gray);
+    border-radius: 0;
+    background: transparent;
+    color: var(--black-color);
+    font-weight: 700;
+}
+.newsletter-section .form-control:hover,
+.newsletter-section .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+/* footer section styling */
+.footer-section {
+    background-color: var(--primary-color);
+}
+.footer-section .footer-link {
+    font-size: 1rem;
+    color: var(--white-color);
+    padding: 0 1.9rem;
+}
+.footer-section .footer-link:hover {
+    color: var(--white-color) !important;
+}
+.footer-section a i {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    padding: 0 1rem;
+}
+
+

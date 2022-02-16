@@ -18,6 +18,10 @@
     .top-banner {
         padding: 9.4rem 0 9.4rem;
     }
+    /* testimonial section styling */
+    .testimonial-section .carousel-caption p {
+        padding: 0;
+    }
     
 }
 @media (max-width: 767px) {
@@ -27,11 +31,41 @@
     h2 {
         font-size: 2rem;
     }
+    /* home section styling */
     .top-banner {
         padding: 10.9rem 0 9.4rem;
     }
+    /* story section styling */
     .story-section {
         height: auto;
         padding: 3rem 0;
     }
+
+    /* testimonial section styling */
+    .testimonial-section .carousel-item {
+        padding: 11rem 3.1rem;
+    }
+
+    /* newsletter section styling */
+    .newsletter-section {
+       width: 75%;
+    }
+    .newsletter-section .main-btn {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    /* footer styling  */
+    .footer-section .footer-link,
+    .footer-section a i {
+        padding: 0 0.7rem;
+    }
+
+}
+@media (max-width: 330px) {
+    /* testimonial section styling */
+    .testimonial-section .carousel-item {
+        padding: 11rem 3.1rem;
+    }
+
 }
