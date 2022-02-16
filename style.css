@@ -53,6 +53,7 @@ a:hover {
 ::-webkit-scrollbar-thumb {
     background-color: var(--primary-color);
 }
+
 /* custom css */
 h1 {
     font-size: 3rem;
@@ -92,9 +93,9 @@ p {
     letter-spacing: 1px;
 }
 .main-btn {
-    padding: 0.6rem 1.9rem;
+    padding: 0.6rem 2rem;
     background: var(--primary-color);
-    border: 0.19rem solid var(--primary-color);
+    border: 0.2rem solid var(--primary-color);
     color: var(--white-color);
     font-weight: 600;
     text-decoration: capitalize;
@@ -105,7 +106,6 @@ p {
     padding: 0.6rem 2rem;
     background-color: var(--white-color);
     border: 0.2rem solid var(--white-color);
-    font-size: 0.9rem;
     font-weight: 600;
     box-shadow: 0 2px 10px -1px rgb(0 0 0 / 19%);
     text-transform: capitalize;
@@ -116,6 +116,24 @@ p {
     background-color: transparent;
     color: var(--primary-color);
 }
+.white-btn:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.wrapper {
+    padding-top: 8.3rem;
+    padding-bottom: 8.3rem;
+}
+.text-content {
+    width: 70%;
+    margin: auto;
+}
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2 {
+    color: var(--white-color);
+}
+
 /* mavigation bar styling */
 .navigation-wrap {
     position: fixed;
@@ -138,21 +156,36 @@ p {
     font-weight: 600;
     text-transform: capitalize;
     color: var(--primary-color);
+    transition: all 0.3s ease-out;
+}
+.navigation-wrap a:hover {
+    transform: scale(1.1);
+}
+.navigation-wrap button {
+    transition: all 0.3s ease-out;
+}
+.navigation-wrap button:hover {
+    transform: scale(0.9);
 }
 .navigation-wrap .main-btn {
     margin-left: 1rem;
     box-shadow: none;
     padding: 0.3rem 1.4rem ;
 }
-.navigation-wrap .scroll-on {
+.navigation-wrap.scroll-on {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background: var(--white-color);
     box-shadow: 0 0.1rem 1.8rem 0 rgba(0, 0, 0, 0.9);
-    transition: all 0.15s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
+.navigation-wrap button i {
+    margin-right: 7px;
+    margin-left: 0;
+}
+
 /* home section styling */
 .top-banner {
     width: 100%;
@@ -160,6 +193,7 @@ p {
     background-size: cover;
     padding: 16.9rem 0 9.4rem;
 }
+
 /* counter section styling */
 .counter-section {
     background-color: var(--primary-color);
@@ -169,3 +203,73 @@ p {
     color: var(--white-color);
     text-transform: uppercase;
 }
+
+/* about section styling */
+.about-section {
+    background: var(--white-color);
+}
+.about-section .card,
+.about-section .card img {
+    border-radius: 0.6rem;
+}
+.about-section .text-sec {
+    padding-left: 2rem;
+}
+.food-type {
+    padding-top: 3.3rem;
+}
+.food-type ul li {
+    font-size: 1rem;
+    color: var(--text-gray);
+    line-height: 32px;
+    position: relative;
+    margin-left: 30px;
+}
+.food-type ul li::before {
+    content: '\f00c';
+    position: absolute;
+    left: -2.2rem;
+    font-family: 'Font Awesome 5 Free';
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+.story-section {
+    width: 100%;
+    background: url('./images/bg/bg-2.jpg') no-repeat center;
+    background-size: cover;
+    padding: 100px;
+    text-align: center;
+    height: auto;
+}
+.story-section h2 {
+    color: var(--primary-color);
+}
+
+/* explore food section */
+.explore-food .card {
+    border: none;
+    background-color: transparent;
+    border-radius: 1rem;
+}
+.explore-food .card img {
+    border-radius: 1rem;
+    object-fit: cover;
+}
+.explore-food .card span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid var(--white-color);
+}
+.explore-food .card span del {
+    color: var(--text-gray);
+    margin-left: 0.5rem;
+}
+
+/* testimonial section styling */
